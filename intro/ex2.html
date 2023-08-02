@@ -1,0 +1,76 @@
+<body>
+  <button class="back-btn">Back</button>
+  <a class="pagging" href="https://www.youtube.com" target="_blank">1</a>
+  <a class="pagging" href="https://www.youtube.com" target="_blank">2</a>
+  <a class="pagging" href="https://www.youtube.com" target="_blank">3</a>
+  <a class="pagging" href="https://www.youtube.com" target="_blank">4</a>
+  <a class="pagging" href="https://www.youtube.com" target="_blank">5</a>
+  <button class="next-btn">Next</button>
+  <button class="stretch">Stretch</button>
+
+  <div>
+    <button class="btn">One</button>
+    <button class="btn">Two</button>
+    <button class="btn">Three</button>
+  </div>
+  <div>
+    <button class="shadow">Shadow</button>
+  </div>
+</body>
+<style>
+  .back-btn {
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+  }
+  .next-btn {
+    height: 50px;
+    width: 50px;
+    margin-left: 5px;
+    margin-right: 10px;
+  }
+  a {
+    margin-right: 5px;
+    text-decoration:none;
+  }
+  div {
+    margin-top: 15px;
+  }
+  .stretch {
+    background-color: green;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+  }
+  .stretch:hover {
+    padding: 20px 40px;
+    transition: 0.8s;
+  }
+  .btn {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .btn:hover {
+    padding: 5px 20px 5px;
+    margin-right: 0px;
+    margin-left: 0px;
+    transition: 0.4s;
+  }
+  .shadow {
+    background-color: green;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  }
+  .shadow:active {
+    margin-top: 5px;
+    margin-left: 5px;
+    box-shadow: none;
+  }
+</style>
