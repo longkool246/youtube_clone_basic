@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+  .container {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  transition: transform 0.6s;
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: width 0.6s, height 0.6s;
+  pointer-events: none; /* Để overlay không che khu vực hover */
+}
+
+.container:hover .image {
+  transform: scale(1.2);
+}
+
+.container:hover::after {
+  width: 200%;
+  height: 200%;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img class="image" src="https://d1hjkbq40fs2x4.cloudfront.net/2017-08-21/files/landscape-photography_1645.jpg" alt="Ảnh">
+  </div>
+</body>
+</html>
